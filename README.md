@@ -1,4 +1,4 @@
-# TDA ABB
+# TP: Carrera de obstáculos
 
 ## Repositorio de (Nombre Apellido) - (Padrón) - (Mail)
 
