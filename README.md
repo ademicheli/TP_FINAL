@@ -36,6 +36,12 @@ Para el desarrollo del TDA TP, decidí afrontar desde varios lugares la forma de
 Como resultado tengo un tp que se crea si y solo si se cumplen estas validaciones, y son de gran utilidad porque me ayudaron a verificar la entrada al segundo camino, el mapeo de pokemones en el tp ¿Cuál sería una forma interesante y o eficiente si se quisiera decir de realizar este mapeo? la solución a esta pregunta que me hice fue un árbol binario de búsqueda, y ¿Por qué? porque es dentro de los tdas vistos en la materia uno de los más eficientes a la hora de buscar elementos a traves de si mismo, con una búsqueda cuyo costo/complejidad temporal es logarítmica por la propiedad misma que cumple el llamado abb_t-> los subarboles izquierdos son menores que el nodo padre y este es menor a su vez que los subarboles izquierdo y con un buen criterio de comparacion la búsqueda se va diviendo por dos (asumiendo que el arbol esta balanceado);
 por otra parte,el desarrollo de una estructura para los jugadores al que le asigné un pokemon_seleccionado y una pista, ciertamente no creí necesario guardar además el dato del numero de jugador, más bien diseñé una funcion que asigne los roles por asi decirlo de jugador numero 1 y numero 2, salidos del enum TP_JUGADO.
 Y por ultimo , había que de alguna u otra forma encarar el problema de la pista la cuál contiene obstáculos en la posicion que el usuario decida, y como es una carrera donde ningún pokemón se queda sin terminarla me trajo a la cabeza otro tda visto en la cursada, un tda cuyo orden de elementos es dado por quien lo utilice, la lista, que reutilicé para darle cuerpo a la pista y use sus métodos en muchas de las funciones atribuidas al tda tp. Un ejemplo de ello fue usar el iterador interno de la lista con funciones auxiliares y una estructura que definí como contexto_t a la que le asigné las distintas variables que usé en las funciones auxiliares, para poder mostrar los obstaculos de la pista, o recopilar los tiempos por cada obstaculo y mostrar el tiempo total de un pokemon en completar una carrera, logrando modularizar y reutilizar funciones.
+
+<div align="center">
+<img width="100%" src="img/diagrama_tp.svg">
+</div>
+
+
 A continuación paso a dejar por escrito el listado de funciones escritas y su complejidad:
 
 Validaciones:
